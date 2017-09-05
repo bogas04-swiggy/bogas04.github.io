@@ -1,0 +1,53 @@
+{
+  "name": "bogas04.github.io",
+  "version": "1.0.0",
+  "description": "My homepage built with Bootstrap, JavaScript and loouveee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel-node build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogas04/bogas04.github.io.git"
+  },
+  "author": "bogas04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bogas04/bogas04.github.io/issues"
+  },
+  "homepage": "https://github.com/bogas04/bogas04.github.io#readme",
+  "dependencies": {
+    "preact": "^8.2.5",
+    "preact-render-to-string": "^3.6.3"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "safari >= 7"
+            ]
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "transform-react-jsx",
+        {
+          "pragma": "h"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  }
+}
